@@ -152,8 +152,8 @@ module.exports = {
     // 修复HMR
     config.resolve.symlinks(true);
 
-    // config.plugins.delete('preload');
-    // config.plugins.delete('prefetch');
+    config.plugins.delete('preload-index');
+    config.plugins.delete('prefetch-index');
 
     config
       .plugin("ignore")
